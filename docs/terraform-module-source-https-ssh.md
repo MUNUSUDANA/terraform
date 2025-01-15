@@ -13,7 +13,7 @@ module "ec2" {
 
 ```
 module "ec2" {
-  source = "git::https://github.com/e2eSolutionArchitect/terraform.git//providers/aws/modules/e2esa-module-aws-ec2?ref=main"
+  source = "git::https://github.com/MUNUSUDANA/terraform.git//providers/aws/modules/e2esa-module-aws-ec2?ref=main"
   .....
 }
 
@@ -23,7 +23,7 @@ module "ec2" {
 OR
 
 module "ec2" {
-  source = "git::https://github.com/e2eSolutionArchitect/e2esa-module-aws-ec2.git?ref=main"
+  source = "git::https://github.com/MUNUSUDANA/e2esa-module-aws-ec2.git?ref=main"
   .....
 when the module is in repo root.
 }
@@ -33,7 +33,7 @@ when the module is in repo root.
 
 ```
 module "ec2" {
-  source = "git::ssh://git@github.com/e2eSolutionArchitect/terraform.git//providers/aws/modules/e2esa-module-aws-ec2?ref=main"
+  source = "git::ssh://git@github.com/MUNUSUDANA/terraform.git//providers/aws/modules/e2esa-module-aws-ec2?ref=main"
   .....
 }
 # ensure that you have SSH private ket setup
@@ -42,5 +42,5 @@ module "ec2" {
 # for module from a public repo for a specific release v1.0.0
 ```
 # here module is in repo root
-source = "git::https://github.com/e2eSolutionArchitect/terraform-aws-apigw.git?ref=v1.0.0"
+source = "git::https://github.com/MUNUSUDANA/terraform-aws-apigw.git?ref=v1.0.0"
 ```
